@@ -7,10 +7,23 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 	<script src="styles/js/bootstrap.min.js"> </script>
+  <style>
+    li{
+      font-size: 24px;
+    }
+
+    li a:hover{
+      border: 1px solid #ddd;
+      box-shadow: 0px 8px 8px -6px #000;
+    }
+  </style>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Memory matching game</a>
+
+<body background="bg.png" style="background-repeat: no-repeat; background-size: cover;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 3px 3px 3px #000; margin-bottom: 1% ">
+
+
+  <a class="navbar-brand" href="#" style="color:#5057EC; text-shadow: 2px 2px 2px #ddd; font-size: 26px; font-weight: 550; text-transform: capitalize;"> Memory matching game </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,23 +31,24 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="child/index.html"> For Child </a>
+        <a class="nav-link" href="child/index.html" style="color:#000"> For Child </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="inter/index.html"> For Intermediate </a>
+        <a class="nav-link" href="inter/index.html" style="color:#000"> For Intermediate </a>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="pg/index.html"> For Graduates </a>
+        <a class="nav-link" href="pg/index.html" style="color:#000"> For Graduates </a>
       </li>
     </ul>
     
   </div>
 </nav>
 
-<p>
-  The real-life game, players flip over cards to locate the pairs that match The goal is to recreate this effect in our project. There are a couple of interactions that you'll need to handle :
-</p>
+<div class="col-md-6">
+   <h3>
+  RULES :
+</h3>
 
 
 <li >The player flips one card over to reveal its underlying symbol.</li>  </br>
@@ -42,6 +56,6 @@
 <li>The player then turns over a second card, trying to find the corresponding card with the same symbol.</li>  </br>
 <li>If the cards match, both cards stay flipped over.</li>  <br>
 <li>The game ends once all cards have been correctly matched.</li>  <br>
-
+</div>
 </body>
 </html>
